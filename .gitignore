@@ -1,0 +1,6 @@
+#操作系统文件
+.DS_Store
+.vscode
+main
+
+*.dSYM
