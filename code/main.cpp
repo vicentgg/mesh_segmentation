@@ -20,9 +20,12 @@ int main(int argc, char* argv[])
 	Reader reader;
 	Model model;
 	Graph graph;
+
+	//读取mesh的顶点数与面片数
 	reader.read(inputFileName, model);
 	cout << model.faces.size() << " faces" << endl;
 	cout << model.vertices.size() << " vertices" << endl;
+
 	model.findNeighFace(delta);
 	cout << "distance computed" << endl;
 	graph.build(model);
